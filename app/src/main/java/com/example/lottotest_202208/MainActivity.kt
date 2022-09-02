@@ -31,13 +31,14 @@ class MainActivity : AppCompatActivity() {
                     break
                 }
             }  //whiel(true)
-
-            mNumList.sort()
         }   //for(i in 0 until 6)
+
+        mNumList.sort()
+
+        for ((index, num) in mNumList.withIndex()) {
+
+            mNumViewList[index].text = num.toString()
+        }
     }
-
-
-
-
 
 }
